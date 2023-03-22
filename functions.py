@@ -1,3 +1,20 @@
+import csv
+from csv import DictReader
+
+
+def read_data(nombre):
+    listaprov = []
+    with open (nombre) as file:
+        reader = DictReader(file)
+        lista_diccionario = list(reader)
+
+    for i in lista_diccionario.len():
+        listaprov.append("dato"+str(i))
+
+    respuesta = dict(zip(listaprov,lista_diccionario))
+    return respuesta
+        
+
 
 def split(diccionario):
     white = {}
@@ -14,6 +31,7 @@ def split(diccionario):
     return white,red
 
 
+
 def reduce(diccionario,clave):
     resp = []
     for i in diccionario:
@@ -24,8 +42,10 @@ def reduce(diccionario,clave):
         return resp
     else:
         print("Type Error")
+
         
-               
+
+
 
             
               
