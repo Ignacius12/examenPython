@@ -17,9 +17,16 @@ def split(diccionario):
 def reduce(diccionario,clave):
     resp = []
     for i in diccionario:
-        for j in i:
-            if j.get(clave)!=None:
-                resp.append(j[clave])
-            else:
-                return    
+        if i.get(clave)!=None:
+            resp.append(i[clave])
+
+    if resp.len() != 0:
+        return resp
+    else:
+        print("Type Error")
+        
+               
+
+            
+              
 
