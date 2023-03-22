@@ -32,6 +32,7 @@ def split(diccionario):
 
 
 
+
 def reduce(diccionario,clave):
     resp = []
     for i in diccionario:
@@ -43,7 +44,7 @@ def reduce(diccionario,clave):
     else:
         print("Type Error")
 
-        
+
 
 
 
